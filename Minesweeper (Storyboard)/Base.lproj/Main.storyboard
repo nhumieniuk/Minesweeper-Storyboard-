@@ -1,24 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Minesweeper__Storyboard_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Minesweeper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba9-Rd-UA9">
+                                <rect key="frame" x="94" y="202" width="226" height="47"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5L2-BE-zHy">
+                                <rect key="frame" x="190.5" y="363" width="33" height="30"/>
+                                <state key="normal" title="Easy">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGG-2t-4VB">
+                                <rect key="frame" x="179.5" y="433" width="55" height="30"/>
+                                <state key="normal" title="Medium">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjp-ix-nd3">
+                                <rect key="frame" x="190" y="503" width="34" height="30"/>
+                                <state key="normal" title="Hard">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99605179219999995" green="1" blue="0.76979962619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.99605179219999995" green="1" blue="0.76979962619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZGG-2t-4VB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cuc-hY-6oV"/>
+                            <constraint firstItem="ZGG-2t-4VB" firstAttribute="top" secondItem="5L2-BE-zHy" secondAttribute="bottom" constant="40" id="D3J-2r-vBO"/>
+                            <constraint firstItem="Jjp-ix-nd3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EJI-Ol-ryP"/>
+                            <constraint firstItem="Jjp-ix-nd3" firstAttribute="top" secondItem="ZGG-2t-4VB" secondAttribute="bottom" constant="40" id="J0r-ou-QCD"/>
+                            <constraint firstItem="5L2-BE-zHy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K3G-b8-uo1"/>
+                            <constraint firstItem="ba9-Rd-UA9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cS3-CR-Wln"/>
+                            <constraint firstItem="ZGG-2t-4VB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mcD-ka-pV5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="36" y="67"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4k6-Kd-5i3">
+            <objects>
+                <viewController id="N02-B4-RbR" customClass="ViewController" customModule="Minesweeper__Storyboard_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VoX-4K-lIl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w00-Au-jTj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D2M-2K-ihX">
+                                        <rect key="frame" x="167" y="44" width="80" height="83"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="D2M-2K-ihX" secondAttribute="bottom" constant="8" id="WO6-E6-j4N"/>
+                                    <constraint firstItem="D2M-2K-ihX" firstAttribute="centerX" secondItem="w00-Au-jTj" secondAttribute="centerX" id="pDP-ts-U7h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wau-8d-G1v"/>
+                        <color key="backgroundColor" red="0.99605179223658058" green="1" blue="0.76979962618243913" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w00-Au-jTj" firstAttribute="top" secondItem="VoX-4K-lIl" secondAttribute="top" id="Iex-4K-VKV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SnE-1a-SV7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="My7-6Q-EDv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="66.964285714285708"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MhS-Fx-8Re">
+            <objects>
+                <viewController id="apc-Eh-5mr" customClass="ViewController" customModule="Minesweeper__Storyboard_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Oh-rm-eCi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rdk-7V-kj5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ze1-by-Rkl">
+                                        <rect key="frame" x="167" y="44" width="80" height="83"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ze1-by-Rkl" secondAttribute="bottom" constant="8" id="Lzx-JY-9Sh"/>
+                                    <constraint firstItem="Ze1-by-Rkl" firstAttribute="centerX" secondItem="rdk-7V-kj5" secondAttribute="centerX" id="fwN-Uv-Txv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xEj-ft-Lpc"/>
+                        <color key="backgroundColor" red="0.99605179219999995" green="1" blue="0.76979962619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rdk-7V-kj5" firstAttribute="top" secondItem="4Oh-rm-eCi" secondAttribute="top" id="PVr-2F-E0k"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="foW-Lt-VHE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="774"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bmg-Lm-wHu">
+            <objects>
+                <viewController id="A7H-Qe-w1y" customClass="ViewController" customModule="Minesweeper__Storyboard_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gPN-nC-RHi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XMN-qk-olo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FgB-Gw-j1e">
+                                        <rect key="frame" x="167" y="44" width="80" height="83"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FgB-Gw-j1e" firstAttribute="centerX" secondItem="XMN-qk-olo" secondAttribute="centerX" id="DPg-eQ-mMY"/>
+                                    <constraint firstAttribute="bottom" secondItem="FgB-Gw-j1e" secondAttribute="bottom" constant="8" id="Usw-8E-1uk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O4g-kj-utB"/>
+                        <color key="backgroundColor" red="0.99605179219999995" green="1" blue="0.76979962619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XMN-qk-olo" firstAttribute="top" secondItem="gPN-nC-RHi" secondAttribute="top" id="4Jy-NW-90Z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qo1-Ao-E7M" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="-693"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
