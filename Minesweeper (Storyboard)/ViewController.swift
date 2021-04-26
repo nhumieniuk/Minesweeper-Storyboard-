@@ -9,16 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    
+   
     var easy = false
     var medium = false
     var hard = false
     var easySquares = [Bool](repeating: false, count: 64)
     var mediumSquares = [Bool](repeating: false, count: 256)
     var hardSquares = [Bool](repeating: false, count: 480)
+    var yIncrement = 0.0
     
     @IBAction func easyButton(_ sender: UIButton) {
         easy = true
@@ -28,6 +27,36 @@ class ViewController: UIViewController {
     }
     @IBAction func hardButton(_ sender: UIButton) {
         hard = true
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        randomMines()
+        printGrid()
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    func printGrid()
+    {
+        //prints a grid
+        for index in 1...64
+        {
+    
+            let square = UIView(frame: CGRect(x: 100 + ((index % 8) * 10), y: 100 + Int(yIncrement) * 10, width: 10, height: 10))
+            yIncrement += 0.125
+            square.backgroundColor=UIColor.lightGray
+            square.layer.borderWidth=1
+            square.layer.borderColor = UIColor.black.cgColor
+            self.view.addSubview(square)
+            
+        }
     }
     
     func randomMines()
@@ -61,7 +90,7 @@ class ViewController: UIViewController {
             while(mines > 0)
             {
                     var i = 0
-                    if(easySquares[i % 255] == false)
+                    if(mediumSquares[i % 255] == false)
                     {
                         i += 1
                         let random = Int.random(in: 1...256)
@@ -83,7 +112,7 @@ class ViewController: UIViewController {
             while(mines > 0)
             {
                     var i = 0
-                    if(easySquares[i % 479] == false)
+                    if(hardSquares[i % 479] == false)
                     {
                         i += 1
                         let random = Int.random(in: 1...480)

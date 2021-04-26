@@ -104,13 +104,6 @@
                                     <constraint firstItem="D2M-2K-ihX" firstAttribute="centerX" secondItem="w00-Au-jTj" secondAttribute="centerX" id="pDP-ts-U7h"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hL-kY-zBQ">
-                                <rect key="frame" x="125" y="361" width="62" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wau-8d-G1v"/>
                         <color key="backgroundColor" red="0.99605179223658058" green="1" blue="0.76979962618243913" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -145,13 +138,6 @@
                                     <constraint firstItem="Ze1-by-Rkl" firstAttribute="centerX" secondItem="rdk-7V-kj5" secondAttribute="centerX" id="fwN-Uv-Txv"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4O-SB-3hg">
-                                <rect key="frame" x="111" y="438" width="37" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xEj-ft-Lpc"/>
                         <color key="backgroundColor" red="0.99605179219999995" green="1" blue="0.76979962619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -186,18 +172,6 @@
                                     <constraint firstAttribute="bottom" secondItem="FgB-Gw-j1e" secondAttribute="bottom" constant="8" id="Usw-8E-1uk"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EASY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJz-1U-3P2">
-                                <rect key="frame" x="139" y="404" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f9s-Qb-dCi">
-                                <rect key="frame" x="126" y="239" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O4g-kj-utB"/>
                         <color key="backgroundColor" red="0.99605179219999995" green="1" blue="0.76979962619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -213,9 +187,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
