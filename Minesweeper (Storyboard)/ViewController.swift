@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     var mediumSquares = [Bool](repeating: false, count: 256)
     var hardSquares = [Bool](repeating: false, count: 480)
     var yIncrement = 0.0
+    var index = 0
     
     @IBAction func easyButton(_ sender: UIButton) {
         easy = true
@@ -32,6 +33,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        easy = true
         randomMines()
         printGrid()
     }
@@ -46,15 +48,24 @@ class ViewController: UIViewController {
     func printGrid()
     {
         //prints a grid
-        for index in 1...64
+        for square in easySquares
         {
-    
-            let square = UIView(frame: CGRect(x: 100 + ((index % 8) * 10), y: 100 + Int(yIncrement) * 10, width: 10, height: 10))
+            index += 1
+            let placedSquare = UIView(frame: CGRect(x: 100 + ((index % 8) * 10), y: 100 + Int(yIncrement) * 10, width: 10, height: 10))
             yIncrement += 0.125
-            square.backgroundColor=UIColor.lightGray
-            square.layer.borderWidth=1
-            square.layer.borderColor = UIColor.black.cgColor
-            self.view.addSubview(square)
+            if(square == false){
+            placedSquare.backgroundColor=UIColor.lightGray
+            placedSquare.layer.borderWidth=1
+            placedSquare.layer.borderColor = UIColor.black.cgColor
+            self.view.addSubview(placedSquare)
+            }
+            else
+            {
+                placedSquare.backgroundColor=UIColor.red
+                placedSquare.layer.borderWidth=1
+                placedSquare.layer.borderColor = UIColor.black.cgColor
+                self.view.addSubview(placedSquare)
+            }
             
         }
     }
@@ -63,10 +74,10 @@ class ViewController: UIViewController {
     {
         if(easy)
         {
+            var i = 0
             var mines = 10
             while(mines > 0)
             {
-                    var i = 0
                     if(easySquares[i % 63] == false)
                     {
                         i += 1
@@ -87,9 +98,10 @@ class ViewController: UIViewController {
         if(medium)
         {
             var mines = 40
+            var i = 0
             while(mines > 0)
             {
-                    var i = 0
+                    
                     if(mediumSquares[i % 255] == false)
                     {
                         i += 1
@@ -109,9 +121,10 @@ class ViewController: UIViewController {
         if(hard)
         {
             var mines = 99
+            var i = 0
             while(mines > 0)
             {
-                    var i = 0
+                    
                     if(hardSquares[i % 479] == false)
                     {
                         i += 1
