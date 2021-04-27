@@ -56,7 +56,10 @@ class ViewController: UIViewController {
             let placedSquare = UIButton(frame: CGRect(x: 10 + ((index % 8) * 30), y: 100 + Int(yIncrement) * 30, width: 30, height: 30))
             yIncrement += 0.125
             index += 1
-            placedSquare.setTitle(String(index - 1), for: UIControl.State.normal)
+            placedSquare.backgroundColor=UIColor.lightGray
+            placedSquare.layer.borderWidth=1
+            placedSquare.layer.borderColor = UIColor.black.cgColor
+            self.view.addSubview(placedSquare)
             if(square == 0){
                 placedSquare.backgroundColor=UIColor.lightGray
                 placedSquare.layer.borderWidth=1
@@ -72,60 +75,9 @@ class ViewController: UIViewController {
             }
             else{
                 //code for numbered squares
-                if(square == 1)
+                if(square != 0)
                 {
-                    placedSquare.backgroundColor=UIColor.darkGray
-                    placedSquare.layer.borderWidth=1
-                    placedSquare.layer.borderColor = UIColor.black.cgColor
-                    self.view.addSubview(placedSquare)
-                }
-                if(square == 2)
-                {
-                    placedSquare.backgroundColor=UIColor.blue
-                    placedSquare.layer.borderWidth=1
-                    placedSquare.layer.borderColor = UIColor.black.cgColor
-                    self.view.addSubview(placedSquare)
-                }
-                if(square == 3)
-                {
-                    placedSquare.backgroundColor=UIColor.yellow
-                    placedSquare.layer.borderWidth=1
-                    placedSquare.layer.borderColor = UIColor.black.cgColor
-                    self.view.addSubview(placedSquare)
-                }
-                if(square == 4)
-                {
-                    placedSquare.backgroundColor=UIColor.orange
-                    placedSquare.layer.borderWidth=1
-                    placedSquare.layer.borderColor = UIColor.black.cgColor
-                    self.view.addSubview(placedSquare)
-                }
-                if(square == 5)
-                {
-                    placedSquare.backgroundColor=UIColor.systemPink
-                    placedSquare.layer.borderWidth=1
-                    placedSquare.layer.borderColor = UIColor.black.cgColor
-                    self.view.addSubview(placedSquare)
-                }
-                if(square == 6)
-                {
-                    placedSquare.backgroundColor=UIColor.purple
-                    placedSquare.layer.borderWidth=1
-                    placedSquare.layer.borderColor = UIColor.black.cgColor
-                    self.view.addSubview(placedSquare)
-                }
-                if(square == 7)
-                {
-                    placedSquare.backgroundColor=UIColor.black
-                    placedSquare.layer.borderWidth=1
-                    placedSquare.layer.borderColor = UIColor.black.cgColor
-                    self.view.addSubview(placedSquare)
-                }
-                if(square == 8)
-                {
-                    placedSquare.backgroundColor=UIColor.white
-                    placedSquare.layer.borderWidth=1
-                    placedSquare.layer.borderColor = UIColor.black.cgColor
+                    placedSquare.setTitle(String(square), for: UIControl.State.normal)
                     self.view.addSubview(placedSquare)
                 }
             }
@@ -209,7 +161,7 @@ class ViewController: UIViewController {
     {
         //1,2,3,4,5,6,7,8,15,16,23,24,31,32,39,40,47,48,53,57,58,59,60,61,62
         //0, 7, 56, 63
-        for i in 1...63
+        for i in 0...63
         {
             if easySquares[i] >= 9
             {
@@ -251,13 +203,13 @@ class ViewController: UIViewController {
                 {
                     if i == 0
                     {
-                        easySquares[i + 9] += 1
                         easySquares[i + 1] += 1
                         easySquares[i + 8] += 1
+                        easySquares[i + 9] += 1
                     }
                     if i == 7
                     {
-                        easySquares[i - 7] += 1
+                        easySquares[i + 7] += 1
                         easySquares[i - 1] += 1
                         easySquares[i + 8] += 1
                     }
