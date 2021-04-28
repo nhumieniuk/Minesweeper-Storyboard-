@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     var hardSquares = [Int](repeating: 0, count: 480)
     var yIncrement = 0.0
     var index = 0
-    
+    private var placedSquare: UIButton!
     @IBAction func easyButton(_ sender: UIButton) {
         easy = true
     }
@@ -59,19 +59,12 @@ class ViewController: UIViewController {
             placedSquare.backgroundColor=UIColor.lightGray
             placedSquare.layer.borderWidth=1
             placedSquare.layer.borderColor = UIColor.black.cgColor
+            placedSquare.tag = square
+            placedSquare.addTarget(self, action: #selector(squareTapped), for: .touchUpInside)
             self.view.addSubview(placedSquare)
-            if(square == 0){
-                placedSquare.backgroundColor=UIColor.lightGray
-                placedSquare.layer.borderWidth=1
-                placedSquare.layer.borderColor = UIColor.black.cgColor
-                self.view.addSubview(placedSquare)
-            }
-            else if(square >= 9)
+            if(square >= 9)
             {
                 placedSquare.backgroundColor=UIColor.red
-                placedSquare.layer.borderWidth=1
-                placedSquare.layer.borderColor = UIColor.black.cgColor
-                self.view.addSubview(placedSquare)
             }
             else{
                 //code for numbered squares
@@ -81,6 +74,7 @@ class ViewController: UIViewController {
                     self.view.addSubview(placedSquare)
                 }
             }
+                
             
         }
     }
@@ -241,6 +235,9 @@ class ViewController: UIViewController {
             
         }
         
+    }
+    @objc func squareTapped(sender: UIButton){
+        print(sender.tag)
     }
 }
 
