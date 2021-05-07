@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3F6F581C26404D2200A512A0 /* mediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F581B26404D2200A512A0 /* mediumView.swift */; };
-		3F6F582226404D7E00A512A0 /* hardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F582126404D7E00A512A0 /* hardView.swift */; };
 		3FBFB8AB26331F2F00A400EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFB8AA26331F2F00A400EA /* AppDelegate.swift */; };
 		3FBFB8AD26331F2F00A400EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFB8AC26331F2F00A400EA /* SceneDelegate.swift */; };
 		3FBFB8AF26331F2F00A400EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFB8AE26331F2F00A400EA /* ViewController.swift */; };
@@ -20,7 +19,6 @@
 
 /* Begin PBXFileReference section */
 		3F6F581B26404D2200A512A0 /* mediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mediumView.swift; sourceTree = "<group>"; };
-		3F6F582126404D7E00A512A0 /* hardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hardView.swift; sourceTree = "<group>"; };
 		3FBFB8A726331F2F00A400EA /* Minesweeper (Storyboard).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minesweeper (Storyboard).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBFB8AA26331F2F00A400EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FBFB8AC26331F2F00A400EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 				3FBFB8B026331F2F00A400EA /* Main.storyboard */,
 				3FF1AB692641973500D298A6 /* easyView.swift */,
 				3F6F581B26404D2200A512A0 /* mediumView.swift */,
-				3F6F582126404D7E00A512A0 /* hardView.swift */,
 				3FBFB8B326331F3300A400EA /* Assets.xcassets */,
 				3FBFB8B526331F3300A400EA /* LaunchScreen.storyboard */,
 				3FBFB8B826331F3300A400EA /* Info.plist */,
@@ -150,7 +147,6 @@
 				3F6F581C26404D2200A512A0 /* mediumView.swift in Sources */,
 				3FBFB8AF26331F2F00A400EA /* ViewController.swift in Sources */,
 				3FBFB8AB26331F2F00A400EA /* AppDelegate.swift in Sources */,
-				3F6F582226404D7E00A512A0 /* hardView.swift in Sources */,
 				3FBFB8AD26331F2F00A400EA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
